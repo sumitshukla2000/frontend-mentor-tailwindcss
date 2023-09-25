@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <title>Practise Tailwind css</title>
 </head>
 
@@ -26,7 +26,25 @@
             </div>
             <!-- button -->
             <a href="#" class="px-4 pt-2 p-3 bg-red-500 text-white rounded-full hover:bg-red-400 hidden md:block">Get
-                Started</a>
+                Started
+            </a>
+
+            <!-- hamburger-icon -->
+            <button id="menu-btn" class="block hamburger focus:outline-none md:hidden">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div class="absolute right-6 left-6 hidden shadow-2xl flex flex-col bg-white items-center self-end space-y-6 py-10 mt-10 font-bold sm:w-auto sm:self-center">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
         </div>
     </nav>
 
